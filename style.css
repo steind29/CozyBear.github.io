@@ -349,7 +349,7 @@ padding: 7px 32px 7px;
   /*margin-left: 204px;*/
   padding-left: 30px;
   font-weight: 100;
- padding-top: 20px; 
+ padding-top: 10px; 
  padding-bottom: 20px; 
   font-weight: 100px;
   font-family: verdana;
@@ -428,7 +428,7 @@ pre {
 
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+  transition: .3s ease;
   border-radius: 0 3px 3px 0;
    margin-left: -188px;
 
@@ -516,7 +516,7 @@ pre {
 
 
 .website {
-
+  margin-top: -20px;
   font-size: 15px;
   font-family: verdana;
 }
@@ -568,14 +568,15 @@ a:hover, a:active {
   font-family: verdana;
 }
 
-.rating {
+.rating, .description {
   color:#3399FF;
   text-align: left;
   margin-left: 60px;
+  margin-right: 60px;
   font-family: verdana;
 }
 
-.phone {
+.phone, .timeEvent {
   color:#3399FF;
   text-align: left;
   margin-left: 60px;
@@ -593,12 +594,25 @@ a:hover, a:active {
     border: 1px solid #3399FF ;
     background-color: #FF8000; 
     margin-top: 
-
 }
 
-.website:hover {
+.buyTickets {
+  color:white;
+    text-align: left;
+    margin-left: 10px;
+    font-family: verdana;
+    padding: 6px 7px 7px;
+    border-radius: 3px;
+    border: 1px solid #3399FF ;
+    background-color: #FF8000; 
+    margin-top: 
+}
+
+
+.website:hover, .buyTickets:hover {
   background-color: #3399FF;
   border: 1px solid #FF8000;
+  cursor: pointer;
 }
 
 .myslides {
@@ -620,14 +634,6 @@ margin-left:10px;
 
 
 
-
-
-
-
-
-
-
-
 #customrange {
   width: 3rem;
 }
@@ -641,9 +647,11 @@ margin-left:10px;
 
 #addFoodToCal
 {
-    padding: 7px 7px 7px;
+  color:white;
+  padding: 7px 7px 7px;
   border: 2px solid #3399FF;
   border-radius: 4px;
+box-shadow: 2px 2px 10px #888888;
 }
 
 #addFoodToCal:visited {
@@ -661,7 +669,7 @@ margin-left:10px;
 
 
 .SSF {
-  padding-top: 50px;
+  padding-top: 25px;
   font-family: verdana;
   margin-left: 60px;
 font-style: italic;
@@ -687,3 +695,35 @@ font-style: italic;
   bottom: 40px;
 }
 
+#currPage a.sidebut {
+box-shadow: 2px 2px 10px #888888;
+  border:2px solid #FF8000;
+}
+
+#range {
+  font-style: italic;
+  color: gray;
+  font-weight: 100px;
+}
+
+#footerp {
+  line-height: 1.2;
+
+}
+
+.description {
+  color:black;
+}
+
+.timeEvent {
+  margin-top: -30px;
+  font-size: 25px;
+}
+
+#pix {
+  position: relative;
+  margin-top: -100px; 
+  margin-left:420px;
+  width: 200px;
+  height: 130px;
+}

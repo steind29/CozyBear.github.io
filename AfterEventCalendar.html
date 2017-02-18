@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>SL-Home</title>
+	<title>SL-Calendar</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
@@ -15,7 +15,7 @@
   <td  id="logo">
     SMART<span id=life>Life </span></td>
 <td id="navi" >
-    <a href="homepage.html" class="headbut" id="hbhome"> Home </a>
+    <a class="headbut" href="homepage.html" id="hbhome"> Home </a>
     <a class="headbut" id="hbprofile"> Profile</a>
     <a class="headbut" id="hbsettings">Settings</a>
     <a href="SignIn.html" id="signout">Sign Out</a>
@@ -27,12 +27,10 @@
    <td id=navtd  > <ul><br>
       <li ><a href="Events.html" class="sidebut" id="sbevents"> Events</a> </li><br><br>
       <li ><a href="Food.html" class="sidebut" id="sbfood">Food</a></li> <br><br>
-      <li ><a href="fitness.html" class="sidebut" id="sbfitness">Fitness</a></li> <br><br>
-      <li ><a href="Calendar.html"class="sidebut" id="sbcalendar">Calendar</a></li> <br><br>
+      <li ><a class="sidebut" id="sbfitness">Fitness</a></li> <br><br>
+      <li id="currPage"><a href="Calendar.html" class="sidebut" id="sbcalendar">Calendar</a></li> <br><br>
    	  <li ><a class="sidebut" id="sbnotifications">Notifications</a></li> 
-
    	  <br><br><br>
-
 
 <!-- Calendar -->
 
@@ -57,28 +55,22 @@
   </td>
     <td id=rightside width"70%">
     	<div id="HSS">
-			<h1> Home </h1>
-			<hr color="#FF8000">
-       <p> After our 3rd task is implemented, our homepage will contain info on all three tasks!<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
-      <!--
-			<p class="newfeedentry"> <b>Jake Reifer</b>: "Avatar was a great movie!"</p> <hr>
-			<p class="newfeedentry"> <b>Kevin Chan</b>: "You gotta check out Todoroki's new deal"</p> <hr>
-			<p class="newfeedentry"> <b>Kevin Liang</b>: "Just went on a 3 mile run around Evanston"</p> <hr>
-			<p class="newfeedentry"> <b>Dan Stein</b>: "The music festival was sick last weekend"</p> <hr>
-			<p class="newfeedentry"> <b>Nick Drutman</b>: "Can't wait for Edzo's tonight"</p> <hr>
-			<p class="newfeedentry"> <b>Jake Reifer</b>: "Check out my new <i>workout</i>"</p> <hr>
-			<p class="newfeedentry"> <b>Dan Stein</b>: "Just bought tickets to the <i>Blackhawks vs. Blues</i>"</p> 
-      -->
+      <h1> February 5-11 </h1><hr color="#FF8000">
+        
+<!-- <button onclick="document.getElementById('imageID').src='AfterFood.png'"> -->
+        <div id="scrollholder">
+			     <img id="imageID" src="KnicksBulls.png">
+           </div>
+      
+
     	</div>
     </td>
   </tr>
   
-            
+
     
   <tr><td id="footer1" colspan="2"><i>Contact us at (555) 555-5555</i></td></tr>	
 </table>
-
+<!-- <script type="text/javascript" src="test3.js"></script> -->
+<script type="text/javascript" src="test3.js"></script>
 </body>
-
-
-
