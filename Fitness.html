@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>SL-Events</title>
+  <title>SL-Fitness</title>
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -55,8 +55,86 @@
   </td>
     <td id=rightside width"70%">
 
- 
+    <div id="fitnessContainer">
+    <div id="tabContainer">
+    <button class="fitnessTab" id="createWorkoutTab" onclick="switchDiv(1)">Create a New Workout</button>
+    <button class="fitnessTab" id="SavedWorkoutsTab" onclick="switchDiv(2)">Saved Workouts</button></div>
+   <hr color="#FF8000">
+    
+
+<!-- Create a Workout Page-->
+    <div id="createworkout"> 
+    <p id="directions"> Create a workout and click "Add to Workouts" to save! </p>
+    <form class="fitnessForm">
+   <u> Workout name:</u><input id="BB" type=text value=""> <br>
+    <br>
+    <u>Frequency:</u> <select id="AA" name="cars">
+  <option value="4pm-6pm">1/week</option>
+    <option value="Custom Range">2/week</option>
+  <option value="Custom Range">3/week</option>
+  <option value="Custom Range">4/week</option>
+  <option value="Custom Range">5/week</option>
+  <option value="Custom Range">6/week</option>
+  <option value="Custom Range">7/week</option>
+  <option value="Custom Range">7+/week</option></select>
+
+    <br>
+      <br>
+    <u>Duration:</u> <input id="hourss" type=text value=""> hours
+    <br>
+  <br>
+  <u>Preset Workouts:</u> <br>
+<input id="" type="checkbox">Cardio<br>
+<input id="" type="checkbox">Abs <br>
+<input id="" type="checkbox">Biceps <br>
+<input id="" type="checkbox">Triceps <br> 
+<input id="" type="checkbox">Back <br>
+<input id="" type="checkbox">Legs <br>
+<input id="" type="checkbox">Yoga/Pilates<br>
+    </form>
+
+
+
 <br>
+
+
+    <button class="addToWorkouts" onclick="switcharoo(2)">  Add to Workouts  </a>
+    </div>
+    
+
+<!-- Workouts-->
+    <div id="workouts"> <form class="fitnessForm"> 
+    <p id="directions" style=" color:#3399FF;font-size: 20px"> Click the check box next to the workout to add it to the calendar! </p>
+     <input id="checkbox" type="checkbox"><div id="workout1"> 
+     <br>
+
+   <span id="workoutName">Workout 1</span>
+    <br>
+    <span id="workoutAreas"> Abs, Cardio, Biceps </span>
+    <br>
+    <span id="workoutDuration"> Duration:  1hr</span>
+    <br>
+    <br>
+    </div>
+    <br>
+
+    <br>
+    <br>
+
+    </form>
+
+<a class="addToWorkouts" id="hidethisbutton" href="AfterWorkoutCalendar.html"> SMART Add to Calendar </a>
+<p id=directions style="margin-left: 20px; margin-right: 20px;color:#3399FF"> *SMART Adding to Calendar means that SMARTLife will add your workout into your schedule at the times that fit your saved preferences and habits! </p>
+
+
+
+
+
+    </div>
+
+
+
+</div>
     </td>
   </tr>
   
@@ -66,9 +144,44 @@
 <tr><td id="footer1" colspan="2"><i>Contact us at (555) 555-5555</i></td></tr>  
 </table>
 </table>
+<script> 
+document.getElementById('checkbox').onclick = function() {
+    // access properties using this keyword
+    if ( this.checked ) {
+        document.getElementById('workout1').style.border="5px solid #FF8000";
+        document.getElementById('hidethisbutton').style.visibility="visible";
+        
+    } else if (!this.checked) {
+        document.getElementById('workout1').style.border="1px solid black";
+        document.getElementById('hidethisbutton').style.visibility="hidden";
+    }
+  }
 
+function switchDiv(x) {
+  if (x==2) {
+    document.getElementById('createworkout').style.display="none";
+    document.getElementById('workouts').style.display="block";
+    document.getElementById('SavedWorkoutsTab').style.backgroundColor="#FF8000";
+    document.getElementById('createWorkoutTab').style.backgroundColor="#3399FF";
+  }
+  else if (x==1) {
+    document.getElementById('workouts').style.display="none";
+    document.getElementById('createworkout').style.display="block";
+    document.getElementById('SavedWorkoutsTab').style.backgroundColor="#3399FF";
+    document.getElementById('createWorkoutTab').style.backgroundColor="#FF8000";
+  }
+}
+
+function switcharoo(x) 
+ {
+    document.getElementById('createworkout').style.display="none";
+    document.getElementById('workouts').style.display="block";
+    document.getElementById('SavedWorkoutsTab').style.backgroundColor="#FF8000";
+    document.getElementById('createWorkoutTab').style.backgroundColor="#3399FF";
+    document.getElementById('workout1').style.visibility="visible";
+    document.getElementById('checkbox').style.visibility="visible";
+}
+
+</script>
  <script src="test3.js"></script>
 </body>
-
-
-</html>
